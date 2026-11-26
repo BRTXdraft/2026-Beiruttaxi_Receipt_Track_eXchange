@@ -134,7 +134,7 @@ function render(scroll = true){
   const total = sel.reduce((t, r) => t + r.total, 0), mins = sel.reduce((t, r) => t + r.min, 0);
   const timeText = `${mins}분+α`;
   const d = mk("details"), thx = mk("div", "thx");
-  thx.append(mk("div", "l1", `${total.toLocaleString("en-US")}원과 ${timeText}`), mk("div", "l2", "귀한 응원의 발걸음 감사드립니다."));
+  thx.append(mk("div", "l1", `${total.toLocaleString("en-US")}원 ${timeText}`), mk("div", "l2", "귀한 응원의 발걸음 감사드립니다."));
   d.append(mk("summary", "", "더 알아보기"), thx);
   sm.append(d);
   sel.forEach(r => {
